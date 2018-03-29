@@ -1,0 +1,26 @@
+{
+  "name": "electron-app",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "homepage": ".",
+  "dependencies": {
+    "electron": "^1.8.4",
+    "electron-debug": "^1.5.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron-start": "electron . develop",
+    "pack-mac": "electron-packager ./ electron-quick-start --platform=darwin --arch=x64 --out ./OutMac --version 1.0.0 --overwrite --env=mac",
+    "pack-win": "electron-packager ./app electron-quick-start --platform=win32 --arch=x64 --out ./OutWin --version 1.0.0 --overwrite"
+  },
+  "devDependencies": {
+    "electron-packager": "^11.2.0"
+  }
+}
